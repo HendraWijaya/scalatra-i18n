@@ -9,8 +9,6 @@ class HomeController extends Controller {
   // http://localhost:8080/?locale=en_AU
   // http://localhost:8080/?locale=en_US
   get("/") {
-    println("hello=" + messages.get("hello").getOrElse("world").format(5))
-    println("something=" + messages.get("something").getOrElse("number %d").format(5))
     jade("/hello")
   }
 

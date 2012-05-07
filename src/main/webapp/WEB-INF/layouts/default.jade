@@ -2,10 +2,10 @@
 -@ val headline: String = title
 -@ val body: String
 
-#collection
-  .item
-    .description
-      p #{messages("hello").format(1234)}
-      p #{messages("some.missing.key", "some default text")}
-      p #{messages.get("some.missing.key").getOrElse("some default text")}
-      != body
+!!! 5
+html(lang="en")
+  head
+    title= title
+    meta(charset="utf-8")
+  body
+    != body
