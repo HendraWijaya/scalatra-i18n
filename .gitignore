@@ -3,3 +3,7 @@ target/
 .classpath
 .target
 .cache
+#intellij idea
+.idea/
+.idea_modules/
+
